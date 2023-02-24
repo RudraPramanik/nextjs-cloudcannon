@@ -1,0 +1,17 @@
+.form {
+
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  [type="text"],
+  [type="email"] {
+    background: white;
+    border: solid 2px gray;
+    border-radius: 0.2em;
+    padding: 0.8em 1em;
+    font-size: .7em;
+  }
+
+}

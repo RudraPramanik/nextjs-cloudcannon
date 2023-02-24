@@ -1,0 +1,74 @@
+@import "@styles/settings/__settings";
+
+.header {
+
+  width: 100%;
+  font-size: 1.2em;
+  color: white;
+  padding: 1em 0;
+
+}
+
+.headerContainer {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
+
+}
+
+.headerTitle {
+
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
+
+  @media (max-width: 720px) {
+    margin-bottom: .2em;
+  }
+
+}
+
+.headerLinks {
+
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 1em;
+
+  @media (max-width: 720px) {
+    order: 3;
+    margin: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  li {
+
+    margin: 0 .8em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  a {
+    color: $color-header-links;
+  }
+
+}
